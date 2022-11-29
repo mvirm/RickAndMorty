@@ -1,0 +1,10 @@
+.App {
+   text-align: center;
+}
+hr {
+   display: none;
+}
+body {
+   background-image: url('https://i.blogs.es/640a73/rick/1366_2000.jpg');
+   background-size:cover;
+}  
