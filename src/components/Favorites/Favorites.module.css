@@ -1,0 +1,25 @@
+.orden{
+    display:flex;
+    flex-wrap: wrap;
+    direction: row;
+    justify-content:space-around;
+    margin-top: 3%;
+}
+.div {
+    background-color: #003566cc;
+    border: solid 6px #003566;
+    border-radius: 15px;
+    margin: 5px;  
+}
+.img {
+    border-radius: 15px;
+    width: 93%;  
+    margin-top: 15px;
+}
+.name{
+    background-color: #38b000e6;
+    width: 100%;
+    color:white;
+    font-size: 22px;
+    -webkit-text-stroke: 1px #007200;
+}

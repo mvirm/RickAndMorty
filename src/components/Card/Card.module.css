@@ -47,7 +47,6 @@
 }
 .divH2{
     position: relative;
-    top: -3%;
     right: -30%;
 }
 .h2 {
@@ -55,6 +54,16 @@
     color: #003566;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+.corazon {
+    font-size: 25px;
+    position: relative;
+    bottom: 2%;
+    left: -35%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
 }
 
 .noVer {
