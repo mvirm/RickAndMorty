@@ -13,10 +13,19 @@
     border-radius: 10px;
     color: white;
     font-size: 16px;
-  
 }
     .button:hover{
         background-color: #e85d04;
         border-color: #e85d04;
         transform: scale(1.2); 
+    }
+
+    @media(max-width:500px){
+        .input{
+            width: 50%;
+            height: 50%;
+        }
+        .button{
+            font-size: 12px;
+        }
     }
