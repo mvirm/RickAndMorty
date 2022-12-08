@@ -71,7 +71,6 @@
 
 @media(max-width:500px){
     .div{
-        background-color: white;
         width: 50%;
     }
     .name{

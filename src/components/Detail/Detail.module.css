@@ -50,8 +50,7 @@
 
 @media(max-width:500px){
     .div{
-        background-color: #38b000;
-        margin:auto;
+        margin: 35px auto;
     }
     .name{
         -webkit-text-stroke: 1px #007200; 
