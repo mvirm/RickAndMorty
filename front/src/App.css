@@ -1,0 +1,22 @@
+.App {
+   text-align: center;
+}
+hr {
+   display: none;
+}
+body {
+   background-image: url('https://i.blogs.es/640a73/rick/1366_2000.jpg');
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-color: #004b23;
+}  
+@media(max-width:500px){
+   body {
+      background-image: url('https://numpaint.com/wp-content/uploads/2020/07/0IMG-2004.jpg');
+      background-size: 100%;
+      background-repeat: repeat-y;
+      
+   }
+}
+
+   

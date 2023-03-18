@@ -1,0 +1,85 @@
+.div {
+    background-color: #ffffffcc;
+    border: solid 4px white;
+    border-radius: 15px;
+    margin: 5px;  
+}
+
+.button {
+    background-color:#e85d04;
+    border-color: #e85d04;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    position: relative;
+    top: 2%;
+    right: -40%;
+}
+.button:hover{
+    transform: scale(1.3); 
+}
+.name{
+    padding-bottom: 10px;
+    background-color: #38b000e6;
+    width: 70%;
+    color:white;
+    -webkit-text-stroke: 1px #007200;
+    position: relative;
+    top: -8%;
+    right: 6%;
+}
+.name:hover{
+    background-color: #007200;
+}
+.link{
+    text-decoration: none;
+}
+
+
+.img {
+    border-radius: 15px;
+    margin-top: 0;
+    width: 93%;  
+    position: relative;
+    top: -5%; 
+}
+.divH2{
+    position: relative;
+    right: -30%;
+}
+.h2 {
+    font-size: 16px;
+    color: #003566;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.corazon {
+    font-size: 25px;
+    position: relative;
+    bottom: 2%;
+    left: -35%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.noVer {
+    display: none;
+}
+
+@media(max-width:500px){
+    .div{
+        width: 50%;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .h2{
+        font-size: 12px;
+    }
+    .corazon{
+        font-size: 18px;
+    }
+}
