@@ -5,7 +5,8 @@ import { connect } from 'react-redux';
 import { useState, useEffect } from 'react';
 
 function Card(props) {
-   const [isFav, setIsFav] = useState(false);
+  // const [isFav, setIsFav] = useState(false);
+   const [isFav, setIsFav] = useState(props.fav);
 
    useEffect(() => {
       props.myFavorites.forEach((fav) => {
@@ -21,7 +22,14 @@ function Card(props) {
          props.deleteFav(props.id);
       } else {
          setIsFav(true);
-         props.addFav(props)
+        // props.addFav(props)
+        props.addFav({
+         name: props.name,
+         species: props.species,
+         gender: props.gender,
+         image: props.image,
+         id: props.id,
+       });
       }
    }
 

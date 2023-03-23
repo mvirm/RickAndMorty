@@ -4,7 +4,15 @@ import style from './Detail.module.css';
 
 export default function Detail() {
     const {detailId}= useParams();
-    const [character, setCharacter]= useState();
+   // const [character, setCharacter]= useState();
+   const [character, setCharacter] = useState({
+      name: "",
+      status: "",
+      specie: "",
+      gender: "",
+      origin: "",
+      image: "",
+    });
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -12,12 +20,23 @@ export default function Detail() {
            .then((response) => response.json())
            .then((char) => {
               if (char.name) {
-                 setCharacter(char);
+                // setCharacter(char);
+                setCharacter({
+                  name: char.name,
+                  status: char.status,
+                  specie: char.specie,
+                  gender: char.specie,
+                  origin: char.origin.name,
+                  image: char.image,
+                });
               } else {
                  window.alert('No hay personajes con ese ID');
               }
            })
-        return setCharacter({});
+        //return setCharacter({});
+        .catch((err) => {
+         alert("No hay personajes con ese ID");
+       });
      }, [detailId]);
 
      return (

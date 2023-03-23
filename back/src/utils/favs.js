@@ -1,5 +1,5 @@
-let fav = [];
+let favs = [];
 
 module.exports = {
-    fav
+    favs
 }

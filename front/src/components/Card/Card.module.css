@@ -49,13 +49,13 @@
     right: -30%;
 }
 .h2 {
-    font-size: 16px;
+    font-size: 14px;
     color: #003566;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 .corazon {
-    font-size: 25px;
+    font-size: 18px;
     position: relative;
     bottom: 2%;
     left: -35%;
@@ -74,12 +74,12 @@
         width: 50%;
     }
     .name{
-        font-size: 16px;
+        font-size: 14px;
     }
     .h2{
         font-size: 12px;
     }
     .corazon{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
