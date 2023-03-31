@@ -60,6 +60,7 @@
 @media(max-width:500px){
     .div{
         margin: 35px auto;
+        flex-direction: column;
     }
     .name{
         -webkit-text-stroke: 1px #007200; 
@@ -68,7 +69,8 @@
         border: solid 4px white;  
     }
     .detalle{
-        font-size: 14px;
+        font-size: 12px;
+        margin-top: 0;
     }
     .button{
         font-size: 14px;

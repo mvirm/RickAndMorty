@@ -21,10 +21,10 @@
 }
 @media(max-width:500px){
     .link{
-        font-size: 13px;
+        font-size: 12px;
     }
     .isActive{
-        font-size: 13px;
+        font-size: 12px;
         font-weight: none;
     }
 }
