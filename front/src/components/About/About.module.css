@@ -3,9 +3,11 @@
     color: white;
     border-radius: 10px;
     margin: auto;
+    margin-top: 90px;
     padding: 5px 20px 20px 20px;
     width: 70%;
     border: solid 4px #003566;
+    font-size: 16px;
 }
 .div{
     display: flex;
@@ -19,6 +21,8 @@
 }
 .p{
     text-align: justify;
+    font-size: 14px;
+    margin-top: 40px;
 }
 .firma{
     margin-top: 0;

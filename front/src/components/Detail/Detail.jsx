@@ -40,7 +40,8 @@ export default function Detail() {
      }, [detailId]);
 
      return (
-        <div>
+      <div>
+        <div className={style.contenedor}>
             {character ? (
                 <div className={style.div}>
                   <h1 className={style.name}>{character.name}</h1>
@@ -53,9 +54,12 @@ export default function Detail() {
                      <h5 className={style.h5}>GENERO: {character.gender}</h5>
                      <h5 className={style.h5}>ORIGEN: {character.origin?.name}</h5>
                     </div>
-                </div>
+                  </div>
             ) : ("")}
+            </div>
+            <div className={style.contenedor}>
             <button className={style.button} onClick={() => navigate('/home')}>Volver</button>
+            </div>
         </div>
      )
 }

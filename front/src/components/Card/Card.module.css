@@ -3,10 +3,13 @@
     border: solid 4px white;
     border-radius: 15px;
     margin: 5px;  
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .button {
-    background-color:#e85d04;
+    background-color:#dc2f02;
     border-color: #e85d04;
     color: white;
     border-radius: 5px;
@@ -22,11 +25,12 @@
 .name{
     padding-bottom: 10px;
     background-color: #38b000e6;
-    width: 70%;
+    width: 80%;
+    font-size:18px;
     color:white;
     -webkit-text-stroke: 1px #007200;
     position: relative;
-    top: -8%;
+    top: -5%;
     right: 6%;
 }
 .name:hover{
@@ -40,13 +44,17 @@
 .img {
     border-radius: 15px;
     margin-top: 0;
-    width: 93%;  
+    margin-bottom: 0%;
+    width: 80%;  
     position: relative;
     top: -5%; 
 }
 .divH2{
     position: relative;
     right: -30%;
+    top: -5%;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 .h2 {
     font-size: 14px;
@@ -57,7 +65,7 @@
 .corazon {
     font-size: 18px;
     position: relative;
-    bottom: 2%;
+    bottom: 8%;
     left: -35%;
     background: none;
     border: none;

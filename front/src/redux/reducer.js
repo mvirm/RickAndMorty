@@ -41,17 +41,17 @@ export default function reducerFav(state = initialState, action) {
             //     allCharacters: state.myFavorites
             //};
         case FILTER:
-            // if(action.payload === 'All') {
-            //     return {
-            //         ...state,
-            //      myFavorites: state.allCharacters
-            //     }
-            // } else {
+            if(action.payload === 'All') {
+                return {
+                    ...state,
+                 myFavorites: state.allCharacters
+                }
+            } else {
                 return {
                     ...state,
                    myFavorites: state.allCharacters.filter(char => char.gender === action.payload)
                 };
-           // };
+           };
             
         case ORDER:
             const orderCopy = [...state.myFavorites]

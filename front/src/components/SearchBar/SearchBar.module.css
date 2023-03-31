@@ -12,10 +12,10 @@
     border-color:#38b000;
     border-radius: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
     .button:hover{
-        background-color: #e85d04;
+        background-color: #dc2f02;
         border-color: #e85d04;
         transform: scale(1.2); 
     }

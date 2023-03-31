@@ -25,7 +25,7 @@ function Favorites({myFavorites}) {
                     <option value='Descendente'>Descendente</option>
                 </select>
               </div>
-              <div>
+            <div>
               <label className={style.label} htmlFor="filter">Filtrar por:</label>
                 <select className={style.select} name='filter' onChange={handleSelectorFilter}>
                     <option value='All'>All</option>
@@ -41,8 +41,11 @@ function Favorites({myFavorites}) {
                 {myFavorites.map(fav => <div className={style.div}>
                 <img src={fav.image} alt={fav.name} className={style.img}/>
                 <h3 className={style.name}>{fav.name}</h3>
-            </div>)}
-        </div>
+                <h2>{fav.species}</h2>
+                <h2>{fav.gender}</h2>
+                <h2>{fav.status}</h2>
+             </div>)}
+            </div>
         <button className={style.button} onClick={() => navigate('/home')}>Volver</button>
         </div>
        

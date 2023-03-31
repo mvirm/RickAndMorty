@@ -6,7 +6,7 @@ export default function About() {
         <div className={style.about}>
             <h1>About Me...</h1>
             <div className={style.div}>
-            <img className={style.img}src='https://media-exp1.licdn.com/dms/image/C4E03AQGWRehGh4o3bA/profile-displayphoto-shrink_200_200/0/1531372880058?e=1675900800&v=beta&t=qsDbSTAGV1z36SBa-6oF0yXss6dSQh5chPqHvufvvds'/>
+            <img className={style.img}src='https://media.licdn.com/dms/image/C4E03AQGWRehGh4o3bA/profile-displayphoto-shrink_800_800/0/1531372880058?e=2147483647&v=beta&t=VQnNxOSFl-t3EIKhIs28uIx45HjL_nYMUHN5xwSwxkQ' alt='ViR Montoya'/>
             
             <p className={style.p}>Responsable, capaz, dinámica, autodidacta y proactiva; amante del color y buen manejo de la estetica.<br/>
             Con 20 años de experiencia en el área técnica del Diseño de Indumentaria...y mas de 10 años de docencia..., la vida dió un giro que hizo cambiar mis espectativas con respecto a mi carrera profesional; busque algo que me representara un desafio, y sin absolutamente ningún tipo de conocimiento, me adrente en el mundo IT.

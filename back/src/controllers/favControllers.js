@@ -1,55 +1,42 @@
-// let favs = require('../utils/favs')
+let {favs} = require('../utils/favs')
 
-// const getFavs = (req, res) => {
-//     try {
-//         if(favs.length) {
-//             res.status(200).json(favs)
-//         }
-//     }catch (error) {
-//         res.status(500).json({error: 'Error GET FAVS'})
-//     }
-// }
+const getFavs = (favs) => {
+ if(!favs.length) {
+     throw new error('no hay favoritos')
+ } else {
+    return favs
+ }
+}
 
-// const addFav = (req, res) => {
-//     const { id, name, species, gender, image } = req.body;
-//     try {
-//         if(id&&name&&species&&gender&&image) {
-//             const character = {
-//                 id,
-//                 name,
-//                 species,
-//                 gender,
-//                 image
-//             };
-//             favs.push(character);
-//             res.status(200).json(`El personaje ${character.name} ha sido guardado en favoritos`)
-//         }   
-//     } catch (error) {
-//         res.status(500).json({error: 'Error POST FAV'})    
-//     }
-// };
+const addFav = (id, name, species, gender, image) => {
+ if(!id||!name ||!species||!gender||!image) throw new Error('faltan datos para agregar un favorito')
+    let character = {
+    id, 
+    name, 
+    species,
+    gender,
+    image
+    }       
+    favs.push(character);
+    return character
+}   
     
-// const deleteFav = (req, res) => {
-//     const { id } = req.params;
-//     try {
-//         if(!id) {
-//             throw new Error('Error DELETE FAV, falta ID')
-//         } else {
-//             let favsFiltered = favs.filter(fav => fav.id !== Number(id));
-//             if(favs.length === favsFiltered.length) {
-//             throw new Error('Error DELETE FAV, ID incorrecto');
-//             } else {
-//                 favs = favsFiltered;
-//                 res.status(200).json(`el personaje con el ID:${id} ha sido eliminado de favoritos`);
-//             } 
-//         }
-//     } catch (error) {
-//         res.status(500).json({error: error});
-//     }
-// };
+const deleteFav = (id) => {
+        if(!id) {
+            throw new Error('Error DELETE FAV, falta ID')
+        } else {
+            let favsFiltered = favs.filter(fav => fav.id !== Number(id));
+            if(favs.length === favsFiltered.length) {
+            throw new Error('Error DELETE FAV, ID incorrecto');
+            } else {
+                favs = favsFiltered;
+                return `el personaje con el ID:${id} ha sido eliminado de favoritos`;
+            } 
+        }
+    }; 
 
-// module.exports = {
-//     getFavs,
-//     addFav,
-//     deleteFav
-// };
+module.exports = {
+    getFavs,
+    addFav,
+    deleteFav
+};
