@@ -1,8 +1,8 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
-const {UserModel} = require('./models/User');
-const {FavoriteModel} = require('./models/Favorite');
+const UserModel = require('./models/User.js');
+const FavoriteModel = require('./models/Favorite.js');
 
 /*
 EJERCICIO 01
@@ -23,7 +23,14 @@ Debajo de este comentario puedes ejecutar la función de los modelos.
 UserModel(sequelize);
 FavoriteModel(sequelize);
 
+const {User, Favorite} = sequelize.models;
+
+User.belongsToMany(Favorite, {through: 'user_favorite'});
+Favorite.belongsToMany(User, {through: 'user_favorite'});
+
+
 module.exports = {
-   ...sequelize.models,
-   sequelize,
+   User,
+   Favorite,
+   conn: sequelize,
 };

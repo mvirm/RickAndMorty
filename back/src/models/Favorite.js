@@ -3,32 +3,32 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
     sequelize.define('Favorite', {
         id: {
-            dataType: DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true  
         },
         name: {
-            dataType: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         status: {
-            dataType: DataTypes.ENUM('Alive', 'Dead', 'unknown'),
+            type: DataTypes.ENUM('Alive', 'Dead', 'unknown'),
             allowNull: false
         },
         species: {
-            dataType: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         gender: {
-            dataType: DataTypes.ENUM('Female', 'Male', 'Genderless', 'unknown'),
+            type: DataTypes.ENUM('Female', 'Male', 'Genderless', 'unknown'),
             allowNull: false
         },
         origin: {
-            dataType: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         image: {
-            dataType: DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         }
 
